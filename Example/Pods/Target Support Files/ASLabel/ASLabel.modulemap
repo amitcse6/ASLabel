@@ -1,0 +1,6 @@
+framework module ASLabel {
+  umbrella header "ASLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -42,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* ASLabel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASLabel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		795DE2E7D6631FA3168C9FEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		795DE2E7D6631FA3168C9FEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9DDC91AAAC2208BAB1787FC2 /* Pods_ASLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6AAC1017ED76EA584ECF608 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B6AAC1017ED76EA584ECF608 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F0CEFC3F1C03CA100014971C /* Pods-ASLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASLabel_Example.debug.xcconfig"; path = "Target Support Files/Pods-ASLabel_Example/Pods-ASLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FAC6050D2B267E09ED6C33A9 /* ASLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLabel.podspec; path = ../ASLabel.podspec; sourceTree = "<group>"; };
+		FAC6050D2B267E09ED6C33A9 /* ASLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASLabel.podspec; path = ../ASLabel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				203BB70F1B34BFE2FDEFB4B6 /* Pods-ASLabel_Tests.debug.xcconfig */,
 				2819268A87F23C9303A67F9D /* Pods-ASLabel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

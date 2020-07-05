@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import ASLabel
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var fullNameLabel: ASLabelStyleClassic!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        fullNameLabel
+            .setFont(UIFont.systemFont(ofSize: 15))
+            .setTitle("Full Name", 0.5)
+            .setText("Mr. Amit")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
-
