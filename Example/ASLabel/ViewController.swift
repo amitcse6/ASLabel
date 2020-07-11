@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         fullNameLabel
-            .setFont(UIFont.systemFont(ofSize: 15))
+            .setAllFont(UIFont.systemFont(ofSize: 15))
             .setTitle("Full Name", 0.5)
             .setText("Mr. Amit")
     }
