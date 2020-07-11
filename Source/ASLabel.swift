@@ -112,7 +112,7 @@ extension ASLabel {
     @discardableResult
     public func setDefaultShadow() -> ASLabel {
         if #available(iOS 9.0, *) {
-            setShadow(UIColor(aslRed: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(aslRed: "#AAAAAA", alpha: 1.0), 5, scale: true)
+            setShadow(UIColor(aslValue: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(aslValue: "#AAAAAA", alpha: 1.0), 5, scale: true)
         } else {
             // Fallback on earlier versions
         }
@@ -137,20 +137,20 @@ extension ASLabel {
 
 @available(iOS 9.0, *)
 extension UIColor {
-    convenience init(asdRed: Int, green: Int, blue: Int, alpha: CGFloat) {
-        assert(asdRed >= 0 && asdRed <= 255, "Invalid red component")
+    convenience init(aslRed: Int, green: Int, blue: Int, alpha: CGFloat) {
+        assert(aslRed >= 0 && aslRed <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
         
-        self.init(red: CGFloat(asdRed) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
+        self.init(red: CGFloat(aslRed) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
     }
     
-//    convenience init(asdRed: Int, alpha: CGFloat) {
-//        self.init(red: (asdRed >> 16) & 0xFF, green: (asdRed >> 8) & 0xFF, blue: asdRed & 0xFF, alpha: alpha)
-//    }
+    convenience init(aslValue: Int, alpha: CGFloat) {
+        self.init(red: (aslValue >> 16) & 0xFF, green: (aslValue >> 8) & 0xFF, blue: aslValue & 0xFF, alpha: alpha)
+    }
     
-    convenience init(aslRed: String, alpha: CGFloat = 1.0) {
-        let hexString: String = aslRed.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    convenience init(aslValue: String, alpha: CGFloat = 1.0) {
+        let hexString: String = aslValue.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
         if (hexString.hasPrefix("#")) {
             scanner.scanLocation = 1
@@ -167,7 +167,7 @@ extension UIColor {
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
     
-    func toHexString() -> String {
+    func aslHexString() -> String {
         var r:CGFloat = 0
         var g:CGFloat = 0
         var b:CGFloat = 0

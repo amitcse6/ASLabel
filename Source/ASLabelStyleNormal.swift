@@ -40,7 +40,7 @@ public class ASLabelStyleNormal: ASLabel, ASLabelSubViewDelegate {
         container?.layer.shouldRasterize = true
         setBordeColor(UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0))
         if #available(iOS 9.0, *) {
-            setShadow(UIColor(aslRed: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(aslRed: "#AAAAAA", alpha: 1.0), 5, scale: true)
+            setShadow(UIColor(aslValue: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(aslValue: "#AAAAAA", alpha: 1.0), 5, scale: true)
         } else {
             // Fallback on earlier versions
         }
