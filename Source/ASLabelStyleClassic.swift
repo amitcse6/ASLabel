@@ -32,6 +32,8 @@ public class ASLabelStyleClassic: ASLabel, ASLabelSubViewDelegate {
     }
     
     public func setupUIElements() {
+        backgroundColor = .clear
+        
         container = UIView()
         addSubview(container.unsafelyUnwrapped)
         container?.layer.rasterizationScale = UIScreen.main.scale

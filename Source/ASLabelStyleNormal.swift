@@ -32,18 +32,15 @@ public class ASLabelStyleNormal: ASLabel, ASLabelSubViewDelegate {
     }
     
     public func setupUIElements() {
+        backgroundColor = .clear
+        
         iscCornerRadius = false
         
         container = UIView()
         addSubview(container.unsafelyUnwrapped)
         container?.layer.rasterizationScale = UIScreen.main.scale
         container?.layer.shouldRasterize = true
-        setBordeColor(UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0))
-        if #available(iOS 9.0, *) {
-            setShadow(UIColor(aslValue: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(aslValue: "#AAAAAA", alpha: 1.0), 5, scale: true)
-        } else {
-            // Fallback on earlier versions
-        }
+        container?.backgroundColor = .clear
         
         myTitle = UILabel()
         container?.addSubview(myTitle.unsafelyUnwrapped)
@@ -51,6 +48,7 @@ public class ASLabelStyleNormal: ASLabel, ASLabelSubViewDelegate {
         myTitle?.textColor = .black
         myTitle?.textAlignment = .left
         myTitle?.text = ""
+        myTitle?.numberOfLines = 0
         
         myLabel = UILabel()
         container?.addSubview(myLabel.unsafelyUnwrapped)
@@ -58,6 +56,7 @@ public class ASLabelStyleNormal: ASLabel, ASLabelSubViewDelegate {
         myLabel?.textColor = UIColor.black
         myLabel?.textAlignment = .left
         myLabel?.text = ""
+        myLabel?.numberOfLines = 0
     }
     
     public func setupConstraints() {

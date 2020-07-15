@@ -79,9 +79,43 @@ extension ASLabel {
     }
     
     @discardableResult
+    public func setNumberOfLines(_ numberOfLines: Int) -> ASLabel {
+        myTitle?.numberOfLines = 0
+        myLabel?.numberOfLines = 0
+        superview?.layoutIfNeeded()
+        layoutIfNeeded()
+        return self
+    }
+    
+    @discardableResult
     public func setTintDepth(_ value: CGFloat) -> ASLabel {
         PADDING = value
         subViewDelegate?.setupConstraints()
+        return self
+    }
+}
+
+// MARK: - self
+extension ASLabel {
+    @discardableResult
+    public func setBackgroundAndTintColor(_ backgroundColor: UIColor) -> ASLabel {
+        setTintColor(backgroundColor)
+        setBackgroundColor(backgroundColor)
+        return self
+    }
+    
+    @discardableResult
+    public func setTintColor(_ backgroundColor: UIColor) -> ASLabel {
+        self.backgroundColor = backgroundColor
+        return self
+    }
+}
+
+// MARK: - Container
+extension ASLabel {
+    @discardableResult
+    public func setBackgroundColor(_ backgroundColor: UIColor) -> ASLabel {
+        container?.backgroundColor = backgroundColor
         return self
     }
     
@@ -132,8 +166,7 @@ extension ASLabel {
         self.container?.layer.shadowOffset = CGSize.zero
         self.container?.layer.shadowRadius = shadowRadius
         return self
-    }
-}
+    }}
 
 @available(iOS 9.0, *)
 extension UIColor {
@@ -146,7 +179,7 @@ extension UIColor {
     }
     
     convenience init(aslValue: Int, alpha: CGFloat) {
-        self.init(red: (aslValue >> 16) & 0xFF, green: (aslValue >> 8) & 0xFF, blue: aslValue & 0xFF, alpha: alpha)
+        self.init(red: CGFloat((aslValue >> 16) & 0xFF), green: CGFloat((aslValue >> 8) & 0xFF), blue: CGFloat(aslValue & 0xFF), alpha: alpha)
     }
     
     convenience init(aslValue: String, alpha: CGFloat = 1.0) {
