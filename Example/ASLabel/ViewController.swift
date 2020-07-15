@@ -11,15 +11,25 @@ import ASLabel
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var fullNameLabel: ASLabelStyleClassic!
+    @IBOutlet weak var fullNameLabel: ASLabel!
+    @IBOutlet weak var emailLabel: ASLabel!
+    @IBOutlet weak var descriptionLabel: ASLabel!
+    @IBOutlet weak var addressLabel: ASLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fullNameLabel
-            .setAllFont(UIFont.systemFont(ofSize: 15))
-            .setTitle("Full Name", 0.5)
-            .setText("Mr. Amit")
+            .setText("Steve Jobs")
+        
+        emailLabel
+            .setText("stevejobs@gmail.com")
+        
+        descriptionLabel
+            .setText("Steven Paul Jobs was an American business magnate, industrial designer, investor, and media proprietor.")
+        
+        addressLabel
+            .setText("Born: February 24, 1955, San Francisco, California, United States.")
     }
     
     override func didReceiveMemoryWarning() {

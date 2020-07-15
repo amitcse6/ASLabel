@@ -19,24 +19,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-FU-RhX" customClass="ASLabelStyleClassic" customModule="ASLabel">
-                                <rect key="frame" x="16" y="308.5" width="343" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-sF-hcK">
+                                <rect key="frame" x="16" y="181.5" width="343" height="304"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMC-cm-qTF" customClass="ASLabelStyleNormal" customModule="ASLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="RJb-7V-cgh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYT-fU-uGd" customClass="ASLabelStyleDark" customModule="ASLabel">
+                                        <rect key="frame" x="0.0" y="78" width="343" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Hu2-a4-fki"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ox-6X-hW1" customClass="ASLabelStyleNormal" customModule="ASLabel">
+                                        <rect key="frame" x="0.0" y="156" width="343" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="u8F-2N-pRX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-FU-RhX" customClass="ASLabelStyleNormal" customModule="ASLabel">
+                                        <rect key="frame" x="0.0" y="234" width="343" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="tZv-O1-JTd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="uKk-9f-oDi"/>
+                                    <constraint firstItem="9Bv-FU-RhX" firstAttribute="leading" secondItem="yL2-sF-hcK" secondAttribute="leading" id="3Ap-cB-WI6"/>
+                                    <constraint firstItem="9ox-6X-hW1" firstAttribute="top" secondItem="LYT-fU-uGd" secondAttribute="bottom" constant="8" id="51m-eG-3Ea"/>
+                                    <constraint firstAttribute="trailing" secondItem="LYT-fU-uGd" secondAttribute="trailing" id="Bfm-vh-nkz"/>
+                                    <constraint firstItem="EMC-cm-qTF" firstAttribute="top" secondItem="yL2-sF-hcK" secondAttribute="top" id="Bvx-ll-tua"/>
+                                    <constraint firstAttribute="trailing" secondItem="EMC-cm-qTF" secondAttribute="trailing" id="HjB-Jg-D9s"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Bv-FU-RhX" secondAttribute="bottom" id="Spc-dw-YcW"/>
+                                    <constraint firstItem="EMC-cm-qTF" firstAttribute="leading" secondItem="yL2-sF-hcK" secondAttribute="leading" id="Vao-i9-2S5"/>
+                                    <constraint firstItem="9Bv-FU-RhX" firstAttribute="top" secondItem="9ox-6X-hW1" secondAttribute="bottom" constant="8" id="f2G-zA-i1X"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ox-6X-hW1" secondAttribute="trailing" id="gqZ-ha-yaV"/>
+                                    <constraint firstItem="LYT-fU-uGd" firstAttribute="top" secondItem="EMC-cm-qTF" secondAttribute="bottom" constant="8" id="rGt-Y2-fNc"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Bv-FU-RhX" secondAttribute="trailing" id="v5P-Tg-qGh"/>
+                                    <constraint firstItem="LYT-fU-uGd" firstAttribute="leading" secondItem="yL2-sF-hcK" secondAttribute="leading" id="xkE-zk-YhE"/>
+                                    <constraint firstItem="9ox-6X-hW1" firstAttribute="leading" secondItem="yL2-sF-hcK" secondAttribute="leading" id="zOv-fN-aVf"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Bv-FU-RhX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="5gM-p8-scR"/>
-                            <constraint firstItem="9Bv-FU-RhX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="UgG-9k-Qs5"/>
-                            <constraint firstItem="9Bv-FU-RhX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Xwa-Dp-Q6P"/>
-                            <constraint firstItem="9Bv-FU-RhX" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="kqC-g4-uMR"/>
+                            <constraint firstItem="yL2-sF-hcK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0g3-Eg-moe"/>
+                            <constraint firstItem="yL2-sF-hcK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="VFf-6q-ZFQ"/>
+                            <constraint firstItem="yL2-sF-hcK" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="rXf-EG-EAZ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="fullNameLabel" destination="9Bv-FU-RhX" id="Zu8-Aj-iFr"/>
+                        <outlet property="addressLabel" destination="9Bv-FU-RhX" id="Bvo-LN-6bA"/>
+                        <outlet property="descriptionLabel" destination="9ox-6X-hW1" id="9kU-Be-ivC"/>
+                        <outlet property="emailLabel" destination="LYT-fU-uGd" id="RCU-de-X1z"/>
+                        <outlet property="fullNameLabel" destination="EMC-cm-qTF" id="eZq-kH-2FA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
