@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         fullNameLabel
             .setText("Steve Jobs")
+            .setLabelAlignment(.center)
         
         emailLabel
             .setText("stevejobs@gmail.com")

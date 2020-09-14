@@ -17,6 +17,7 @@
 		28AF9CBF24B2434000124626 /* ASLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF9CBB24B2434000124626 /* ASLabel.swift */; };
 		28AF9CC024B2434000124626 /* ASLabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF9CBC24B2434000124626 /* ASLabel+Extension.swift */; };
 		28D69E8E24BA040E000817AB /* ASLabelStyleNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D69E8D24BA040E000817AB /* ASLabelStyleNormal.swift */; };
+		28D88DC8250F39D600ED4C56 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D88DC7250F39D600ED4C56 /* UIView+Extension.swift */; };
 		2925FA8F6CD26E0FA5A52067FD1AB067 /* Pods-ASLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83A7E5EA112BC616F30370F7EBD3A1 /* Pods-ASLabel_Tests-dummy.m */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		32F3C6CC96C2D05D269CDE152B550BE7 /* ASLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC808E2602D7EC86328118107AFBFD1 /* ASLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,6 +92,7 @@
 		28AF9CBB24B2434000124626 /* ASLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASLabel.swift; sourceTree = "<group>"; };
 		28AF9CBC24B2434000124626 /* ASLabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLabel+Extension.swift"; sourceTree = "<group>"; };
 		28D69E8D24BA040E000817AB /* ASLabelStyleNormal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASLabelStyleNormal.swift; sourceTree = "<group>"; };
+		28D88DC7250F39D600ED4C56 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		2B284F4E4BE60D2754E8B63B1E133853 /* Pods_ASLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0E4530DF603FF324194BAE99D68A78 /* Pods-ASLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2FE5C92801B201A99012004CD99EDAD3 /* ASLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASLabel.release.xcconfig; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				28AF9CBA24B2434000124626 /* ASLabelStyleClassic.swift */,
 				28AF9CBB24B2434000124626 /* ASLabel.swift */,
 				28AF9CBC24B2434000124626 /* ASLabel+Extension.swift */,
+				28D88DC7250F39D600ED4C56 /* UIView+Extension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AF9CBF24B2434000124626 /* ASLabel.swift in Sources */,
+				28D88DC8250F39D600ED4C56 /* UIView+Extension.swift in Sources */,
 				28AF9CBD24B2434000124626 /* ASLabelStyleDark.swift in Sources */,
 				28AF9CBE24B2434000124626 /* ASLabelStyleClassic.swift in Sources */,
 				28D69E8E24BA040E000817AB /* ASLabelStyleNormal.swift in Sources */,

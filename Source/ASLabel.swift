@@ -88,6 +88,25 @@ extension ASLabel {
     }
     
     @discardableResult
+    public func setTitleAlignment(_ textAlignment: NSTextAlignment) -> ASLabel {
+        myTitle?.textAlignment = textAlignment
+        return self
+    }
+    
+    @discardableResult
+    public func setLabelAlignment(_ textAlignment: NSTextAlignment) -> ASLabel {
+        myLabel?.textAlignment = textAlignment
+        return self
+    }
+    
+    @discardableResult
+    public func setAllTextAlignment(_ textAlignment: NSTextAlignment) -> ASLabel {
+        myLabel?.textAlignment = textAlignment
+        myTitle?.textAlignment = textAlignment
+        return self
+    }
+    
+    @discardableResult
     public func setTintDepth(_ value: CGFloat) -> ASLabel {
         PADDING = value
         subViewDelegate?.setupConstraints()
